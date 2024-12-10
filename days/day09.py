@@ -7,6 +7,7 @@ with open(Path(__file__).parent / "../inputs/day09.txt") as file:
 # lines = """2333133121414131402""".splitlines()
 # lines = """11122""".splitlines()
 
+starttime=time.time()
 line = list(map(int,lines[0]))
 
 total_space_needed = 0
@@ -48,7 +49,6 @@ while True:
     # break
 print(result1)
 
-starttime=time.time()
 line = list(map(int,lines[0]))
 file_sizes = []
 file_starts = []
