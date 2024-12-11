@@ -3,7 +3,7 @@ from collections import Counter
 import time
 
 start=time.time()
-with open(Path(__file__).parent / "../inputs/day11e.txt") as file:
+with open(Path(__file__).parent / "../inputs/day11.txt") as file:
     lines = file.read().splitlines()
 
 # lines = """125 17""".splitlines()
