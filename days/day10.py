@@ -13,7 +13,6 @@ with open(Path(__file__).parent / "../inputs/day10.txt") as file:
 # 32019012
 # 01329801
 # 10456732""".splitlines()
-# lines = """11122""".splitlines()
 
 def is_OOB(position):
     return not ((0 <= position[0] < rows) and (0 <= position[1] < cols))
