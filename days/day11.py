@@ -38,6 +38,8 @@ for i in range(75):
         result1 = counts.total()
         
     if i == 74:
-        result2 = counts.total()            
+        result2 = counts.total()   
+end = time.time()         
 print(result1)
 print(result2)
+print(end-start)
