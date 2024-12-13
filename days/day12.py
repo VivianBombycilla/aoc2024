@@ -131,10 +131,10 @@ def try_join(pos1,pos2):
         perims[pos2[0]][pos2[1]] += perims[pos1[0]][pos1[1]]
         corners[pos2[0]][pos2[1]] += corners[pos1[0]][pos1[1]]
 
-print(plot_reps)
-print(tree_sizes)
-print(perims)
-print(corners)
+# print(plot_reps)
+# print(tree_sizes)
+# print(perims)
+# print(corners)
 for row in range(rows):
     for col in range(cols):
         position = (row,col)
@@ -151,8 +151,10 @@ for row in range(rows):
     for col in range(cols):
         position = (row,col)
         if plot_reps[row][col] == position:
-            print(item(position),position,tree_sizes[row][col],perims[row][col],corners[row][col])
+            # print(item(position),position,tree_sizes[row][col],perims[row][col],corners[row][col])
             result1 += tree_sizes[row][col]*perims[row][col]
             result2 += tree_sizes[row][col]*corners[row][col]
+end=time.time()
 print(result1)
 print(result2)
+print(end-start)
