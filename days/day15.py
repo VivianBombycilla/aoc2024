@@ -64,7 +64,7 @@ def expand_map(lines):
     return new_map
 
 map2 = expand_map(map1)
-print(map2)
+# print(map2)
 
 def is_OOB(position):
     return not ((0 <= position[0] < rows) and (0 <= position[1] < cols))
@@ -153,6 +153,7 @@ def can_move_box2(pos,direction):
     # print("new positions:",new_poses)
     moved_boxes = {pos}
     for new_pos in new_poses:
+        if new_pos in moved_boxes: continue
         new_item = item2(new_pos)
         if new_item == "#":
             return set()
